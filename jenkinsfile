@@ -1,8 +1,10 @@
-pipeline{
-  agent any 
-    stages{
-      stage('checking'){
-        echo " this is ${env.BRANCH_NAME} "
-       }
+pipeline {
+    agent any
+    stages {
+        stage('checking') {
+            steps {
+                echo "This is Test ${env.BRANCH_NAME}"
+            }
+        }
     }
 }
