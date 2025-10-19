@@ -2,7 +2,7 @@ pipeline{
   agent any 
     stages{
       stage('checking'){
-        echo " this is ${env.BRANCH_NAME} "
+        echo " this is Test ${env.BRANCH_NAME} "
        }
     }
 }
