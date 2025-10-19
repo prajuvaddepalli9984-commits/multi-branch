@@ -1,0 +1,8 @@
+pipeline{
+  agent any 
+    stages{
+      stage('checking'){
+        echo " this is ${env.BRANCH_NAME} "
+       }
+    }
+}
